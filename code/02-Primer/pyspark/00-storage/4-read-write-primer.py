@@ -268,7 +268,7 @@ display(grouped_by_year_df)
 
 # MAGIC %sql
 # MAGIC SELECT cast(cast(case_year as string) as date) as case_year, primary_type as case_type, count(*) AS crime_count
-# MAGIC FROM FROM IDENTIFIER(:chicago_crimes_curated)
+# MAGIC FROM IDENTIFIER(:chicago_crimes_curated)
 # MAGIC where primary_type in ('BATTERY','ASSAULT','CRIMINAL SEXUAL ASSAULT')
 # MAGIC GROUP BY case_year,primary_type ORDER BY case_year, case_type;
 
