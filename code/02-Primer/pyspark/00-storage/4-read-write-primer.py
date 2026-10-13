@@ -369,6 +369,7 @@ display(filtered_df)
 
 # COMMAND ----------
 
+#pip install plotly
 from plotly.offline import plot
 from plotly.graph_objs import *
 import numpy as np
